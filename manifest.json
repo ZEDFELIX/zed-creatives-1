@@ -1,0 +1,13 @@
+{
+  "name": "ZED Creatives",
+  "short_name": "ZED",
+  "description": "ZED Creatives — brand and graphic design studio.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FAFAF7",
+  "theme_color": "#063121",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
