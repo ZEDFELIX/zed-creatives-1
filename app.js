@@ -416,3 +416,9 @@ function zedAddTestimonial(entry){
   list.unshift(entry);
   try{ localStorage.setItem(TESTIMONIALS_KEY, JSON.stringify(list)); }catch(e){}
 }
+/* ============ PWA: service worker registration ============ */
+if('serviceWorker' in navigator){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+  });
+}
