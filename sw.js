@@ -1,8 +1,8 @@
-const CACHE_NAME = 'zed-creatives-v2';
+const CACHE_NAME = 'zed-creatives-v3';
 const APP_SHELL = [
   'index.html','about.html','services.html','portfolio.html','shop.html',
   'cart.html','contact.html','login.html',
-  'style.css','app.js','logo.png','icon-192.png','icon-512.png'
+  'style.css','zed.js','app.js','logo.png','icon-192.png','icon-512.png'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
