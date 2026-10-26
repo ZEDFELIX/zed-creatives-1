@@ -560,3 +560,99 @@ footer a:hover{color:#fff}
   .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
   .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
+
+/* ZED CREATIVES — cinematic red portfolio direction inspired by the supplied reference */
+:root{
+  --bg:#090707!important;--surface:#151010!important;--surface-2:#201010!important;
+  --text:#fff8f5!important;--muted:#c8b8b5!important;--line:rgba(255,95,75,.32)!important;
+  --accent:#ff2638!important;--accent-2:#ff5a24!important;--primary:#ff2638!important;
+  --shadow:0 20px 60px rgba(255,20,35,.16)!important;
+}
+html{background:#090707!important;scroll-behavior:smooth}
+body{
+  color:#fff8f5!important;
+  background:
+    radial-gradient(ellipse at 90% 20%,rgba(255,0,20,.22),transparent 35%),
+    radial-gradient(ellipse at 8% 48%,rgba(255,75,0,.13),transparent 34%),
+    linear-gradient(145deg,#080707 0%,#160909 52%,#080707 100%)!important;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.5;
+  background:linear-gradient(125deg,transparent 0 60%,rgba(255,0,24,.12) 65%,transparent 72%),
+             radial-gradient(ellipse at 100% 70%,rgba(255,34,0,.13),transparent 45%);
+}
+header,.site-header,.navbar,.nav-wrap{
+  background:rgba(8,6,6,.78)!important;border-color:rgba(255,75,65,.18)!important;
+  backdrop-filter:blur(22px)!important;-webkit-backdrop-filter:blur(22px)!important;
+}
+a{color:#ff5a4e}
+a:hover{color:#ff9a79}
+h1,h2,h3,h4,.section-head h2,.page-hero h1{
+  color:#fff!important;letter-spacing:-.035em;
+}
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse at 80% 50%,rgba(255,12,28,.32),transparent 42%),
+    linear-gradient(110deg,rgba(0,0,0,.95),rgba(38,4,7,.8) 60%,rgba(100,5,10,.45))!important;
+  border-bottom:1px solid rgba(255,66,55,.28);
+}
+.hero:after{
+  content:"";position:absolute;right:-9%;top:15%;width:52%;height:65%;
+  background:linear-gradient(135deg,transparent 35%,rgba(255,22,30,.12),transparent 72%);
+  transform:skewX(-18deg);pointer-events:none;
+}
+.hero-inner{position:relative;z-index:1}
+.hero h1,.hero .hero-title{
+  font-family:Impact,"Arial Narrow",Haettenschweiler,sans-serif!important;
+  font-weight:900!important;text-transform:uppercase!important;
+  letter-spacing:-.025em!important;line-height:.88!important;
+  font-size:clamp(54px,9vw,112px)!important;
+  text-shadow:0 5px 35px rgba(255,0,25,.18);
+}
+.hero-eyebrow,.eyebrow,.hero .eyebrow{
+  color:#ff6b57!important;text-transform:uppercase;letter-spacing:.2em;font-weight:800;
+}
+.hero p,.hero-lead,.lead{color:#e5d7d4!important}
+.btn,.button,button,.hero-ctas a:first-child{
+  border-radius:999px!important;background:linear-gradient(110deg,#ff293b,#c9081b)!important;
+  color:#fff!important;border:1px solid rgba(255,255,255,.16)!important;
+  box-shadow:0 8px 26px rgba(255,20,35,.22)!important;
+}
+.btn:hover,button:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.btn-secondary,.hero-ctas a:last-child{
+  background:rgba(255,255,255,.045)!important;color:#fff!important;
+  border:1px solid rgba(255,255,255,.28)!important;box-shadow:none!important;
+}
+section,.section,.workspace{background:transparent!important}
+.section-head{border-color:rgba(255,70,55,.22)!important}
+.section-head h2{font-family:Impact,"Arial Narrow",sans-serif!important;text-transform:uppercase;letter-spacing:.01em!important}
+.stat-strip{background:linear-gradient(105deg,rgba(255,34,43,.92),rgba(117,5,13,.92))!important;border-block:1px solid rgba(255,150,110,.35)!important}
+.stat-strip,.stat-strip *{color:#fff!important}
+.card,.work-card,.service-card,.project-card,.pricing-card,.testimonial-card,.faq-item,.contact-card,.blog-card{
+  background:linear-gradient(145deg,rgba(35,18,18,.92),rgba(14,11,11,.95))!important;
+  border:1px solid rgba(255,95,75,.27)!important;border-radius:18px!important;
+  box-shadow:0 16px 44px rgba(0,0,0,.25)!important;
+}
+.work-card{overflow:hidden!important}
+.work-card img,.project-card img{transition:transform .45s ease,filter .45s ease}
+.work-card:hover img,.project-card:hover img{transform:scale(1.035);filter:saturate(1.12)}
+input,textarea,select{
+  background:#130e0e!important;color:#fff!important;border:1px solid rgba(255,90,70,.35)!important;
+}
+input::placeholder,textarea::placeholder{color:#aa9692!important}
+footer,.site-footer{
+  background:rgba(5,4,4,.94)!important;border-top:1px solid rgba(255,60,50,.28)!important;color:#c8b8b5!important;
+}
+footer a,.site-footer a{color:#ff7166!important}
+img{max-width:100%}
+@media(max-width:640px){
+  .hero{padding-top:36px!important}
+  .hero h1,.hero .hero-title{font-size:clamp(47px,15vw,76px)!important;line-height:.92!important}
+  .hero-inner{gap:24px!important}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:10px}
+  .hero-ctas .btn,.hero-ctas a{min-height:44px}
+  .stat-strip{padding:18px 0!important}
+  .work-card,.card{border-radius:14px!important}
+}
